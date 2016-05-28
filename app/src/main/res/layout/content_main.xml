@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.swapnilborkar.demo.constraintlayout.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:text="Star Wars Episode VII: The Force Awakens"
+        android:layout_width="352dp"
+        android:layout_height="79dp"
+        android:id="@+id/textView"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        app:layout_constraintLeft_toLeftOf="@+id/content_main"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        android:layout_marginTop="32dp" />
+
+    <ImageView
+        android:src="@drawable/backdrop"
+        android:layout_width="352dp"
+        android:layout_height="195dp"
+        android:id="@+id/imageView"
+        app:layout_constraintLeft_toLeftOf="@+id/content_main"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toTopOf="@+id/content_main" />
+
+    <Button
+        android:text="Show Timings"
+        android:layout_width="298dp"
+        android:layout_height="51dp"
+        android:id="@+id/button2"
+        app:layout_constraintLeft_toLeftOf="@+id/content_main"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:layout_marginTop="40dp"
+        app:layout_constraintRight_toRightOf="@+id/content_main"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintHorizontal_bias="0.4" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="20dp"
+        app:relativeBegin="20dp" />
+
+</android.support.constraint.ConstraintLayout>
